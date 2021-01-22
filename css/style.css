@@ -19,6 +19,8 @@ border-radius: 15px;
 
 .container.pic1 {
 background-image: url(../img/edinburgh.jpg);
+position: relative;
+z-index: 40;
 }
 
 .container.pic2 {
@@ -48,9 +50,16 @@ color: #0065bd;
 }
 
 .container > .roma {
-color: red;
+color: #9f0807;
 }
 
 .container > .toronto {
 color: #FFFFFF;
+}
+
+/* rules for darkening the images */
+
+.dark {
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 50;
 }
