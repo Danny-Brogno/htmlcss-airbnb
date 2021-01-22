@@ -13,14 +13,12 @@ width: 100%;
 height: 100vh;
 background-size: cover;
 background-repeat: no-repeat;
-margin: 5px 5px 5px 0px;
+margin: 10px 5px 5px 0px;
 border-radius: 15px;
 }
 
 .container.pic1 {
 background-image: url(../img/edinburgh.jpg);
-position: relative;
-z-index: 40;
 }
 
 .container.pic2 {
@@ -31,29 +29,25 @@ background-image: url(../img/roma.jpg);
 background-image: url(../img/toronto.jpg);
 }
 
-.dark-layer {
-background-color: rgba(0, 0, 0, 0.5);
-z-index: 1;
-}
-
 /* rules for text in pics */
 
 .text {
 text-align: center;
-font-size: 200%;
+font-size: 300%;
 position: relative;
 top: 45%;
+z-index: 100;
 }
 
-.container > .edinburgh{
+div > .edinburgh{
 color: #0065bd;
 }
 
-.container > .roma {
+div > .roma {
 color: #9f0807;
 }
 
-.container > .toronto {
+div > .toronto {
 color: #FFFFFF;
 }
 
@@ -61,5 +55,5 @@ color: #FFFFFF;
 
 .dark {
 background-color: rgba(0, 0, 0, 0.5);
-z-index: 50;
+height: 100vh;
 }
